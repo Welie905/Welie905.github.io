@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .card{
+            width:376px ;
+            height: 512px;
+            position: relative;
+        }
+        .card > img{
+            width:376px ;
+            height: 512px;
+        }
+        .card > .bg{
+            position: absolute;
+            z-index: -1;
+        }
+        .card > .bg2{
+            position: absolute;
+            z-index: 2;
+            width:60px ;
+            height: 60px;
+        }
+        .card > .bg3{
+            position: absolute;
+            z-index: 3;
+
+        }
+        .card > .bg4{
+            position: absolute;
+            bottom: 10px;
+            left: 10%;
+            z-index: 4;
+            height: 45px;
+            width: 300px;
+
+        }
+        .card > .npc{
+            position: absolute;
+            z-index: 1;
+            animation: move 3s infinite;
+            transition: transform 0.5s ease;
+        }
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(20px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .card > .npc:hover {
+            transform: translateX(50px);
+        }
+    </style>
+</head>
+<body>
+<div class="card" >
+    <img class="bg" src="https://patchwiki.biligame.com/images/sr/a/a7/2ouh10uu2cfj052jdgz0nsm20q42l56.png">
+    <img class="npc" src="https://patchwiki.biligame.com/images/sr/e/e0/44vucb9yhgtruvn5uxlmzv8lep9lrn5.png">
+    <img class="bg2" src="https://patchwiki.biligame.com/images/sr/e/eb/j8g3rg64n5omh3ccfxvw1nd5o66vn0f.png">
+    <img class="bg3" src="https://patchwiki.biligame.com/images/sr/c/ce/1bq2vaqwavmj6ssh3nrrpg60i4njcaa.png">
+    <img class="bg4" src="https://patchwiki.biligame.com/images/sr/c/c7/g380fo4o5accoa1rmlckz3e24vpx23e.png">
+</div>
+</body>
+</html>
